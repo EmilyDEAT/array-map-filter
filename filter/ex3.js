@@ -5,7 +5,7 @@
    1. The first is an array (as usual). It contains OBJECTS, each of which having
       two attributes: name and price
    2. The second is a MAXIMUM PRICE
-* Your goal is to return an array, containing ONLY the products whose price isn't ABOVE
+* Your goal is to return an array, containing ONLY the products whose price isn't ABOVE (au dessus)
   the "maximum price" provided as 2nd argument
 
 SMALL HINT:
@@ -33,6 +33,7 @@ Expected OUTPUT for these sample arguments:
 */
 
 function filterOnPrice(products, maxPrice) {
+    return products.filter(prod => prod.price <= maxPrice)
 }
 
 // DON'T TOUCH THIS!
