@@ -43,9 +43,10 @@ Expected OUTPUT for this sample
 */
 
 function getFoodCategories(foods) {
+    return foods.map((ingr) =>
+        `${ingr.food} is ${ingr.isVegetarian ? '' : 'not '}suitable for vegetarians`
+    )
 }
-
-
 
 // DON'T TOUCH THIS!
 module.exports = getFoodCategories;
